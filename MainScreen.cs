@@ -425,6 +425,7 @@ namespace AtMoS3
             {
                 DateTime newSample = (DateTime.Now).AddMilliseconds(Convert.ToInt32(txtSleepTime.Text) * 1000);
 
+                /*  This has been removed for the SCU version
                 setlblStatusTextSafely("Solenoid energised.");
                 
                 string openSolenoid = "Programs/pythonScripts/relayState";
@@ -437,7 +438,7 @@ namespace AtMoS3
                 runPythonScript(startPump, 22, 0, "1", relay);
                 //  Now create a delay to allow time for the calibration hood to be purged.
 
-                /*
+                
                 while (DateTime.Now < purgeTime)
                 {
                     //  Create a loop
