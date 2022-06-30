@@ -55,11 +55,12 @@ namespace AtMoS3
             //  Here we make changes to the program features at runtime depending on which organisation
             //  is using the program.  The active features are determined by the value 
             //  of "User" in the app.config file.
-            if (version == "Southern Cross University")
+            if (version == "SCU")
             {
-                this.Text = "Atmos4.1 - SCU";
-                tabControl1.TabPages.Remove(Sample);
-                toolStripStatusLabel1.Text = "AtMoS - Licensed to Faculty of Science and Engineering - Southern Cross University.";
+                this.Text = "Atmos4.1 - SCU-Faculty of Science and Engineering";
+                tabControl1.TabPages.Remove(GasAddition);
+                tabControl1.TabPages.Remove(BME280Constants);
+                toolStripStatusLabel1.Text = "AtMoS - Licensed to - Southern Cross University.";
             }
             else
             {
@@ -436,18 +437,12 @@ namespace AtMoS3
                 runPythonScript(startPump, 22, 0, "1", relay);
                 //  Now create a delay to allow time for the calibration hood to be purged.
 
-
-<<<<<<< HEAD
-=======
-                //  Now create a delay to allow time for the calibration hood to be purged.
-                DateTime purgeTime = (DateTime.Now).AddMilliseconds(Convert.ToInt32(txtPurgeTime.Text) * 1000);
-                
->>>>>>> 7c854fc976d8621a924130de5164c20cec53ce66
+                /*
                 while (DateTime.Now < purgeTime)
                 {
                     //  Create a loop
                 }
-
+                */
 
 
                 // Start the getGas.py program    
@@ -464,13 +459,13 @@ namespace AtMoS3
                     //  Create a loop
                 }
 
-<<<<<<< HEAD
+
                 setlblStatusTextSafely("Stopping the pump.");
-=======
+
                 
 
                 // Stop the usb pump
->>>>>>> 7c854fc976d8621a924130de5164c20cec53ce66
+
                 string stopPump = "Programs/pythonScripts/relayState";
                 runPythonScript(stopPump, 22, 1, "1", relay);
                 //  Create a delay between the solenoid energising and the usb pump starting.
@@ -478,9 +473,11 @@ namespace AtMoS3
 
                 setlblStatusTextSafely("Going to sleep.");
 
+                /*
                 // De-energise and close the usb pump solenoid valve.
                 string closeSolenoid = "Programs/pythonScripts/relayState";
                 runPythonScript(closeSolenoid, 26, 1, "1", relay);
+                */
 
                 //  Write the results to the datafile.
                 write2DataFile();
@@ -516,6 +513,16 @@ namespace AtMoS3
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNO2Conc_Click(object sender, EventArgs e)
         {
 
         }

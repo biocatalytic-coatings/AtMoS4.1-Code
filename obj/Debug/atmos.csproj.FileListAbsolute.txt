@@ -1,0 +1,15 @@
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\atmos.csproj.AssemblyReference.cache
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\AtMoS3.About.resources
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\AtMoS3.ChangeLog.resources
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\AtMoS3.MainScreen.resources
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\atmos.csproj.GenerateResource.cache
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\atmos.csproj.CoreCompileInputs.cache
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\Production\Atmos4.1.exe.config
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\Production\Atmos4.1.exe.manifest
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\Production\Atmos4.1.application
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\Production\Atmos4.1.exe
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\Production\Atmos4.1.pdb
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\Atmos4.1.exe.manifest
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\Atmos4.1.application
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\Atmos4.1.exe
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\Atmos4.1.pdb
