@@ -1,0 +1,5 @@
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\AtMoS3.About.resources
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\AtMoS3.ChangeLog.resources
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\AtMoS3.MainScreen.resources
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\atmos.csproj.GenerateResource.cache
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\atmos.csproj.CoreCompileInputs.cache
