@@ -364,7 +364,7 @@
             this.Climate.Padding = new System.Windows.Forms.Padding(3);
             this.Climate.Size = new System.Drawing.Size(407, 167);
             this.Climate.TabIndex = 0;
-            this.Climate.Text = "Experiment data";
+            this.Climate.Text = "Climate data";
             this.Climate.UseVisualStyleBackColor = true;
             // 
             // lblPressure
