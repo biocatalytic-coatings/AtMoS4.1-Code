@@ -376,6 +376,7 @@
             this.lblPressure.Size = new System.Drawing.Size(58, 13);
             this.lblPressure.TabIndex = 17;
             this.lblPressure.Text = "lblPressure";
+            this.lblPressure.Visible = false;
             // 
             // label18
             // 
@@ -385,6 +386,7 @@
             this.label18.Size = new System.Drawing.Size(168, 13);
             this.label18.TabIndex = 16;
             this.label18.Text = "Atmospheric pressure (/kPa)";
+            this.label18.Visible = false;
             // 
             // lblNO2Conc
             // 
