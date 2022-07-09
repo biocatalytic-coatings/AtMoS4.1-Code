@@ -59,13 +59,15 @@ namespace AtMoS3
             {
                 this.Text = "Atmos4.1 - SCU-Faculty of Science and Engineering";
                 tabControl1.TabPages.Remove(GasAddition);
-                tabControl1.TabPages.Remove(BME280Constants);
+                tabControl1.TabPages.Remove(SHTConstants);
                 toolStripStatusLabel1.Text = "AtMoS - Licensed to - Southern Cross University.";
             }
             else
             {
                 this.Text = "Atmos4.1 - Illawarra Coatings";
                 toolStripStatusLabel1.Text = "AtMoS - Licensed to Illawarra Coatings.";
+                tabControl1.TabPages.Remove(GasAddition);
+                tabControl1.TabPages.Remove(SHTConstants);
             }
 
             //  This code simply removes the label text used during design.

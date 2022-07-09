@@ -98,7 +98,7 @@
             this.txtGasAdditionTime = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.BME280Constants = new System.Windows.Forms.TabPage();
+            this.SHTConstants = new System.Windows.Forms.TabPage();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -129,7 +129,7 @@
             this.Volts.SuspendLayout();
             this.Sample.SuspendLayout();
             this.GasAddition.SuspendLayout();
-            this.BME280Constants.SuspendLayout();
+            this.SHTConstants.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -340,7 +340,7 @@
             this.tabControl1.Controls.Add(this.Volts);
             this.tabControl1.Controls.Add(this.Sample);
             this.tabControl1.Controls.Add(this.GasAddition);
-            this.tabControl1.Controls.Add(this.BME280Constants);
+            this.tabControl1.Controls.Add(this.SHTConstants);
             this.tabControl1.Location = new System.Drawing.Point(7, 19);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -830,19 +830,19 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Gas addition time (seconds)";
             // 
-            // BME280Constants
+            // SHTConstants
             // 
-            this.BME280Constants.Controls.Add(this.label27);
-            this.BME280Constants.Controls.Add(this.label26);
-            this.BME280Constants.Controls.Add(this.label25);
-            this.BME280Constants.Controls.Add(this.label24);
-            this.BME280Constants.Controls.Add(this.label23);
-            this.BME280Constants.Location = new System.Drawing.Point(4, 22);
-            this.BME280Constants.Name = "BME280Constants";
-            this.BME280Constants.Size = new System.Drawing.Size(407, 167);
-            this.BME280Constants.TabIndex = 5;
-            this.BME280Constants.Text = "BME280 Constants";
-            this.BME280Constants.UseVisualStyleBackColor = true;
+            this.SHTConstants.Controls.Add(this.label27);
+            this.SHTConstants.Controls.Add(this.label26);
+            this.SHTConstants.Controls.Add(this.label25);
+            this.SHTConstants.Controls.Add(this.label24);
+            this.SHTConstants.Controls.Add(this.label23);
+            this.SHTConstants.Location = new System.Drawing.Point(4, 22);
+            this.SHTConstants.Name = "SHTConstants";
+            this.SHTConstants.Size = new System.Drawing.Size(407, 167);
+            this.SHTConstants.TabIndex = 5;
+            this.SHTConstants.Text = "BME280 Constants";
+            this.SHTConstants.UseVisualStyleBackColor = true;
             // 
             // label27
             // 
@@ -971,8 +971,8 @@
             this.Sample.PerformLayout();
             this.GasAddition.ResumeLayout(false);
             this.GasAddition.PerformLayout();
-            this.BME280Constants.ResumeLayout(false);
-            this.BME280Constants.PerformLayout();
+            this.SHTConstants.ResumeLayout(false);
+            this.SHTConstants.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -1066,7 +1066,7 @@
         private System.ComponentModel.BackgroundWorker bwGasCont;
         private System.ComponentModel.BackgroundWorker bwgasPulsed;
         private System.Windows.Forms.ToolStripMenuItem pulsedStandaloneToolStripMenuItem;
-        private System.Windows.Forms.TabPage BME280Constants;
+        private System.Windows.Forms.TabPage SHTConstants;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;

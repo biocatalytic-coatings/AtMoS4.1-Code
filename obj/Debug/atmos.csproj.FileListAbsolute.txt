@@ -12,3 +12,4 @@ C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\Atmos4
 C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\Atmos4.1.application
 C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\Atmos4.1.exe
 C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\Atmos4.1.pdb
+C:\Users\steve\Source\Repos\biocatalytic-coatings\AtMoS4.1-Code\obj\Debug\atmos.csproj.AssemblyReference.cache
