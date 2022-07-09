@@ -475,7 +475,7 @@ namespace AtMoS3
                 string stopPump = "Programs/pythonScripts/relayState";
                 runPythonScript(stopPump, 6, 1, "1", relay);
                 //  Create a delay between the solenoid energising and the usb pump starting.
-                Thread.Sleep(2000);
+                //Thread.Sleep(2000);
                 
 
                 setlblStatusTextSafely("Going to sleep.");
