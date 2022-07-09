@@ -440,7 +440,7 @@ namespace AtMoS3
                 string relay = "relay";
                 DateTime purgeTime = (DateTime.Now).AddMilliseconds(Convert.ToInt32(txtPurgeTime.Text) * 1000);
                 string startPump = "Programs/pythonScripts/relayState";
-                runPythonScript(startPump, 5, 0, "1", relay);
+                runPythonScript(startPump, 6, 0, "1", relay);
                 //  Now create a delay to allow time for the calibration hood to be purged.
 
                 
@@ -457,7 +457,7 @@ namespace AtMoS3
                 string fileName = "Programs/pythonScripts/myGas";
                 string gas = "gas";
                 string samplingTime = txtSamplingTime.Text;
-                runPythonScript(fileName, 5, 1, samplingTime, gas);
+                runPythonScript(fileName, 6, 1, samplingTime, gas);
 
 
                 while (DateTime.Now < analysisTime)
@@ -473,7 +473,7 @@ namespace AtMoS3
                 // Stop the usb pump
 
                 string stopPump = "Programs/pythonScripts/relayState";
-                runPythonScript(stopPump, 5, 1, "1", relay);
+                runPythonScript(stopPump, 6, 1, "1", relay);
                 //  Create a delay between the solenoid energising and the usb pump starting.
                 Thread.Sleep(2000);
                 
