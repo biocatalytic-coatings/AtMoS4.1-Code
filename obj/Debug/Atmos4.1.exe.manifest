@@ -49,17 +49,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/sSOL/rNoPlkfuglFt5+iCqEYwFLzVvuA97YW3Ry4nc=</dsig:DigestValue>
+        <dsig:DigestValue>Zo/c/GRQ9THaBnZRvmV4mwH0CV6YfrNchc4RqnrlbTU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Atmos4.1.exe.config" size="1092">
+  <file name="Atmos4.1.exe.config" size="1107">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>AFWvTNFfdt15ASTnywDlNigyyGaLxmlTek0p4c7CrfU=</dsig:DigestValue>
+      <dsig:DigestValue>UrythYwnxBKhveQyUamPeAE9ObjpTmG1gYLdAk1vooo=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -653,6 +653,7 @@
             this.txtAdafruitUpdateInterval.TabIndex = 11;
             this.txtAdafruitUpdateInterval.Text = "15";
             this.txtAdafruitUpdateInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAdafruitUpdateInterval.Visible = false;
             // 
             // label22
             // 
@@ -662,6 +663,7 @@
             this.label22.Size = new System.Drawing.Size(199, 13);
             this.label22.TabIndex = 10;
             this.label22.Text = "Adafruit update interval (seconds)";
+            this.label22.Visible = false;
             // 
             // txtOffsetCalibrationTime
             // 
@@ -672,6 +674,7 @@
             this.txtOffsetCalibrationTime.TabIndex = 9;
             this.txtOffsetCalibrationTime.Text = "60";
             this.txtOffsetCalibrationTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtOffsetCalibrationTime.Visible = false;
             // 
             // label17
             // 
@@ -681,6 +684,7 @@
             this.label17.Size = new System.Drawing.Size(205, 13);
             this.label17.TabIndex = 8;
             this.label17.Text = "Offset calibration interval (minutes)";
+            this.label17.Visible = false;
             // 
             // txtClimateUpdatedInterval
             // 
@@ -708,7 +712,7 @@
             this.txtSleepTime.Name = "txtSleepTime";
             this.txtSleepTime.Size = new System.Drawing.Size(53, 20);
             this.txtSleepTime.TabIndex = 5;
-            this.txtSleepTime.Text = "30";
+            this.txtSleepTime.Text = "60";
             this.txtSleepTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtSleepTime.TextChanged += new System.EventHandler(this.txtSleepTime_TextChanged);
             // 
@@ -719,7 +723,7 @@
             this.txtSamplingTime.Name = "txtSamplingTime";
             this.txtSamplingTime.Size = new System.Drawing.Size(53, 20);
             this.txtSamplingTime.TabIndex = 4;
-            this.txtSamplingTime.Text = "10";
+            this.txtSamplingTime.Text = "25";
             this.txtSamplingTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtSamplingTime.TextChanged += new System.EventHandler(this.txtSamplingTime_TextChanged);
             // 
@@ -731,7 +735,7 @@
             this.txtPurgeTime.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtPurgeTime.Size = new System.Drawing.Size(53, 20);
             this.txtPurgeTime.TabIndex = 3;
-            this.txtPurgeTime.Text = "5";
+            this.txtPurgeTime.Text = "25";
             this.txtPurgeTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label14
