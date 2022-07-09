@@ -427,17 +427,20 @@ namespace AtMoS3
             {
                 DateTime newSample = (DateTime.Now).AddMilliseconds(Convert.ToInt32(txtSleepTime.Text) * 1000);
 
-                /*  This has been removed for the SCU version
+                /*
                 setlblStatusTextSafely("Solenoid energised.");
                 
                 string openSolenoid = "Programs/pythonScripts/relayState";
                 string relay = "relay";
                 runPythonScript(openSolenoid, 26, 0, "1", relay);
                 Thread.Sleep(2000);
+                */
+
                 setlblStatusTextSafely("Sensor purge cycle started.");
+                string relay = "relay";
                 DateTime purgeTime = (DateTime.Now).AddMilliseconds(Convert.ToInt32(txtPurgeTime.Text) * 1000);
                 string startPump = "Programs/pythonScripts/relayState";
-                runPythonScript(startPump, 22, 0, "1", relay);
+                runPythonScript(startPump, 5, 0, "1", relay);
                 //  Now create a delay to allow time for the calibration hood to be purged.
 
                 
@@ -445,7 +448,7 @@ namespace AtMoS3
                 {
                     //  Create a loop
                 }
-                */
+               
 
 
                 // Start the getGas.py program    
@@ -466,19 +469,18 @@ namespace AtMoS3
                 setlblStatusTextSafely("Stopping the pump.");
 
                 
-                /*
+               
                 // Stop the usb pump
 
                 string stopPump = "Programs/pythonScripts/relayState";
-                runPythonScript(stopPump, 22, 1, "1", relay);
+                runPythonScript(stopPump, 5, 1, "1", relay);
                 //  Create a delay between the solenoid energising and the usb pump starting.
                 Thread.Sleep(2000);
-                */
+                
 
                 setlblStatusTextSafely("Going to sleep.");
 
-                /*
-                // De-energise and close the usb pump solenoid valve.
+                /*                // De-energise and close the usb pump solenoid valve.
                 string closeSolenoid = "Programs/pythonScripts/relayState";
                 runPythonScript(closeSolenoid, 26, 1, "1", relay);
                 */
