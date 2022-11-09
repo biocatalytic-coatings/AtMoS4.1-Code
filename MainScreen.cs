@@ -64,8 +64,8 @@ namespace AtMoS3
             }
             else
             {
-                this.Text = "Atmos4.1 - Illawarra Coatings";
-                toolStripStatusLabel1.Text = "AtMoS - Licensed to Illawarra Coatings.";
+                this.Text = "Atmos 5.0 - Illawarra Coatings";
+                toolStripStatusLabel1.Text = "AtMoS 5.0.0 - Licensed to Illawarra Coatings.";
                 tabControl1.TabPages.Remove(GasAddition);
                 tabControl1.TabPages.Remove(SHTConstants);
             }
@@ -82,6 +82,10 @@ namespace AtMoS3
             lblNO2WE.Text = "";
             lblNOConc.Text = "";
             lblNO2Conc.Text = "";
+
+            lblNO2AE.Visible = false;
+            lblNO2WE.Visible = false;
+
 
         }
 
@@ -148,6 +152,7 @@ namespace AtMoS3
                 //  trying to start the program when the datafile has not been created.
                 aquisitionToolStripMenuItem.Visible = true;
                 addNOGasToolStripMenuItem.Visible = true;
+                samplingRateToolStripMenuItem.Visible = true;
 
             }
         }
@@ -162,7 +167,7 @@ namespace AtMoS3
             string _logFileName = lblDataFileLocation.Text + ".csv";
 
             //  Here we construct the datastring.  The \r ending is important to ensure that each data entry begins on a new line.
-            string _data2Write = timeStamp + "," + lblPressure.Text + "," + lblTemperature.Text + "," + lblHumidity.Text + "," + lblNOAE.Text + "," + lblNOWE.Text + "," + lblNO2AE.Text + "," + lblNO2WE.Text + "," + "\r";
+            string _data2Write = timeStamp + "," + lblTemperature.Text + "," + lblHumidity.Text + "," + lblNOAE.Text + "," + lblNOWE.Text + "," + "\r";
 
             // Write the datastring to the file "_logFileName".
             using (StreamWriter outputFile = File.AppendText(_logFileName))
@@ -277,7 +282,7 @@ namespace AtMoS3
             //  Yes...this is working correctly.  
 
             string python = @"/usr/bin/python3";
-            string args3 = string.Format(@"/home/pi/Programs/pythonScripts/publish2Cloud/publish2Cloud.py {0} {1} {2} {3} {4} {5}", lblTemperature.Text, lblHumidity.Text, lblNOAE.Text, lblNOWE.Text, lblNO2AE.Text, lblNO2WE.Text);
+            string args3 = string.Format(@"/home/pi/Programs/pythonScripts/publish2Cloud/publish2Cloud.py {0} {1} {2} {3}", lblTemperature.Text, lblHumidity.Text, lblNOAE.Text, lblNOWE.Text);
             //string args3 = string.Format(@"/home/pi/Programs/pythonScripts/publish2Cloud/publish2Cloud.py {0} {1} {2} {3} {4} {5} {6}", lblTemperature.Text, lblHumidity.Text, lblPressure.Text, lblNOAE.Text, lblNOWE.Text, lblNO2AE.Text, lblNO2WE.Text);
             //string args3 = string.Format(@"/home/pi/Programs/pythonScripts/publish2Cloud/publish2Cloud.py {0} {1} {2} {3}", lblNOAE.Text, lblNOWE.Text, lblNO2AE.Text, lblNO2WE.Text);
             try
@@ -478,7 +483,7 @@ namespace AtMoS3
                 //Thread.Sleep(2000);
                 
 
-                setlblStatusTextSafely("Going to sleep.");
+                setlblStatusTextSafely("Waiting for next measurement cycle.");
 
                 /*                // De-energise and close the usb pump solenoid valve.
                 string closeSolenoid = "Programs/pythonScripts/relayState";
@@ -531,6 +536,25 @@ namespace AtMoS3
         private void lblNO2Conc_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void stage2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtPurgeTime.Text = "180";
+            txtSamplingTime.Text = "60";
+            txtSleepTime.Text = "300";
+        }
+
+        private void stage3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtSleepTime.Text = "28800";
+        }
+
+        private void stage1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtPurgeTime.Text = "25";
+            txtSamplingTime.Text = "25";
+            txtSleepTime.Text = "60";
         }
     }
 

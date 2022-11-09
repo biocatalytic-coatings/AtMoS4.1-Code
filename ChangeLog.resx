@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Version 5.0.0
+    - Clone Version 4.1.0 and 
+       a) hide NO2 electrode readings
+       b) hide Atm. Press. readings
+       c) don't write Atm. Press. readings to file or Adafruit
+       d) add Sampling Rate menu item to allow rapid 
+           updates</value>
+  </data>
 </root>
