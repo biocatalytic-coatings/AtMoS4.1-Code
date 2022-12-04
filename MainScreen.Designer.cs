@@ -351,7 +351,7 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Parameters";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+
             // 
             // tabControl1
             // 
@@ -422,7 +422,7 @@
             this.lblNO2Conc.TabIndex = 15;
             this.lblNO2Conc.Text = "lblNO2Conc";
             this.lblNO2Conc.Visible = false;
-            this.lblNO2Conc.Click += new System.EventHandler(this.lblNO2Conc_Click);
+
             // 
             // lblNOConc
             // 
@@ -770,7 +770,7 @@
             this.txtSleepTime.TabIndex = 5;
             this.txtSleepTime.Text = "60";
             this.txtSleepTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtSleepTime.TextChanged += new System.EventHandler(this.txtSleepTime_TextChanged);
+
             // 
             // txtSamplingTime
             // 
@@ -782,7 +782,7 @@
             this.txtSamplingTime.TabIndex = 4;
             this.txtSamplingTime.Text = "25";
             this.txtSamplingTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtSamplingTime.TextChanged += new System.EventHandler(this.txtSamplingTime_TextChanged);
+
             // 
             // txtPurgeTime
             // 
@@ -987,7 +987,7 @@
             this.toolStripStatusLabel1.Spring = true;
             this.toolStripStatusLabel1.Text = "AtMoS - Licensed to Southern Cross University";
             this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
+
             // 
             // tmrWrite2File
             // 

@@ -54,7 +54,7 @@ namespace AtMoS3
         {
             //  Here we make changes to the program features at runtime depending on which organisation
             //  is using the program.  The active features are determined by the value 
-            //  of "User" in the app.config file.
+            //  of "User" in the app.config file.  Just added this to check GitHub upload.
             if (version == "SCU")
             {
                 this.Text = "Atmos4.1 - SCU-Faculty of Science and Engineering";
@@ -513,31 +513,7 @@ namespace AtMoS3
             bwgasPulsed.RunWorkerAsync();
         }
 
-        private void txtSamplingTime_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtSleepTime_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNO2Conc_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void stage2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtPurgeTime.Text = "180";
